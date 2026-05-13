@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل أكواد اتصالات مصر الشامل 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --eti-green: #719917; 
+            --eti-dark: #0a0c02;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            background-color: var(--eti-dark);
+            background-image: radial-gradient(circle at top right, #1a2305, transparent), radial-gradient(circle at bottom left, #050701, transparent);
+            color: #fff;
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; }
+
+        header {
+            text-align: center;
+            padding: 40px;
+            border-bottom: 2px solid var(--eti-green);
+            margin-bottom: 30px;
+        }
+
+        header h1 { font-size: 2.2rem; color: var(--eti-green); text-shadow: 0 0 10px rgba(113, 153, 23, 0.3); }
+
+        .section-title {
+            color: #fff;
+            background: var(--eti-green);
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 40px 0 20px;
+            font-size: 1.3rem;
+            display: inline-block;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(113, 153, 23, 0.2);
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            border-color: var(--eti-green);
+            transform: translateY(-3px);
+            background: rgba(113, 153, 23, 0.05);
+        }
+
+        .card-title { font-weight: bold; margin-bottom: 12px; color: #ddd; min-height: 40px; }
+
+        .code-box {
+            background: #000;
+            color: var(--eti-green);
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            direction: ltr !important;
+            unicode-bidi: bidi-override;
+            cursor: pointer;
+            border: 1px solid #222;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid var(--eti-green);
+            background: #111;
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        footer { text-align: center; margin-top: 50px; padding: 20px; color: #666; border-top: 1px solid #1a1a1a; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>دليل أكواد اتصالات مصر 2026</h1>
+        <p>القائمة الكاملة والمحدثة لجميع الخدمات والأكواد المختصرة</p>
+    </header>
+
+    <input type="text" id="search" class="search-bar" placeholder="ابحث عن الخدمة (مثلاً: رصيد، فلكس، إنترنت، كاش)..." onkeyup="searchCodes()">
+
+    <!-- الخدمات الأساسية -->
+    <h2 class="section-title">⚙️ الخدمات الأساسية</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="card-title">خدمة العملاء (من أي رقم اتصالات)</span>
+            <div class="code-box" onclick="copyCode('333')">333</div>
+        </div>
+        <div class="card">
+            <span class="card-title">خدمة العملاء (من أي تليفون أرضي)</span>
+            <div class="code-box" onclick="copyCode('0235346333')">0235346333</div>
+        </div>
+        <div class="card">
+            <span class="card-title">معرفة رقم الهاتف</span>
+            <div class="code-box" onclick="copyCode('*947#')">*947#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">الاستعلام عن الرصيد</span>
+            <div class="code-box" onclick="copyCode('*555#')">*555#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">شحن كارت اتصالات</span>
+            <div class="code-box" onclick="copyCode('*556*الرقم#')">*556*الرقم#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">تحويل الرصيد</span>
+            <div class="code-box" onclick="copyCode('*557*الرقم*المبلغ#')">*557*الرقم*المبلغ#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">خدمة سلفني شكراً</span>
+            <div class="code-box" onclick="copyCode('*911#')">*911#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">خدمة كلمني شكراً (لأي رقم)</span>
+            <div class="code-box" onclick="copyCode('*111*الرقم#')">*111*الرقم#</div>
+        </div>
+    </div>
+
+    <!-- باقات الإنترنت -->
+    <h2 class="section-title">🌐 باقات الإنترنت والموبايل إنترنت</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="card-title">الاشتراك في باقات الإنترنت</span>
+            <div class="code-box" onclick="copyCode('*566#')">*566#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">معرفة استهلاك باقة النت</span>
+            <div class="code-box" onclick="copyCode('*558*5#')">*558*5#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">إلغاء باقة الإنترنت</span>
+            <div class="code-box" onclick="copyCode('*566*2357#')">*566*2357#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">رسائل ضبط الإنترنت (التهيئة)</span>
+            <div class="code-box" onclick="copyCode('*100#')">*100#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">باقات سوبر كونكت</span>
+            <div class="code-box" onclick="copyCode('*22*11#')">*22*11#</div>
+        </div>
+    </div>
+
+    <!-- باقات حكاية ومكسات -->
+    <h2 class="section-title">⭐ باقات حكاية ومكسات</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="card-title">الاشتراك أو التحويل لنظام حكاية</span>
+            <div class="code-box" onclick="copyCode('*689#')">*689#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">تجديد باقة حكاية قبل الموعد</span>
+            <div class="code-box" onclick="copyCode('*807#')">*807#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">معرفة استهلاك باقة حكاية</span>
+            <div class="code-box" onclick="copyCode('*838#')">*838#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">إضافة رقم لخدمة حكاية (الأهل)</span>
+            <div class="code-box" onclick="copyCode('*319#')">*319#</div>
+        </div>
+    </div>
+
+    <!-- اتصالات كاش -->
+    <h2 class="section-title">💰 اتصالات كاش (Etisalat Cash)</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="card-title">قائمة خدمات اتصالات كاش</span>
+            <div class="code-box" onclick="copyCode('*777#')">*777#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">إنشاء رقم سري لمحفظة كاش</span>
+            <div class="code-box" onclick="copyCode('*777*1#')">*777*1#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">خدمة عملاء اتصالات كاش</span>
+            <div class="code-box" onclick="copyCode('778')">778</div>
+        </div>
+    </div>
+
+    <!-- خدمات إضافية والترفيه -->
+    <h2 class="section-title">📞 خدمات إضافية ومنع المعاكسات</h2>
+    <div class="grid">
+        <div class="card">
+            <span class="card-title">خدمة الكول تون (اشتراك/تغيير)</span>
+            <div class="code-box" onclick="copyCode('1500')">1500</div>
+        </div>
+        <div class="card">
+            <span class="card-title">إلغاء خدمة الكول تون</span>
+            <div class="code-box" onclick="copyCode('*5*15#')">*5*15#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">خدمة ناس وناس (القائمة السوداء)</span>
+            <div class="code-box" onclick="copyCode('*616#')">*616#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">تفعيل خاصية غير متاح (الخط مغلق)</span>
+            <div class="code-box" onclick="copyCode('*21*787#')">*21*787#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">إلغاء خاصية غير متاح</span>
+            <div class="code-box" onclick="copyCode('##002#')">##002#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">معرفة استهلاك الدقائق</span>
+            <div class="code-box" onclick="copyCode('*558*1#')">*558*1#</div>
+        </div>
+        <div class="card">
+            <span class="card-title">تحويل المكالمات لخط آخر</span>
+            <div class="code-box" onclick="copyCode('*67*الرقم#')">*67*الرقم#</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع حقوق الأكواد محفوظة لشركة اتصالات مصر &copy; 2026</p>
+        <p>تم التصميم بواسطة عبدالله السواح</p>
+    </footer>
+</div>
+
+<script>
+    function copyCode(text) {
+        // تنظيف النص من الكلمات التوضيحية عند النسخ
+        let cleanText = text.replace('الرقم', '').replace('المبلغ', '');
+        navigator.clipboard.writeText(cleanText).then(() => {
+            alert("تم نسخ الكود: " + cleanText + "\nقم بلصقه في لوحة الاتصال.");
+        });
+    }
+
+    function searchCodes() {
+        let input = document.getElementById('search').value.toLowerCase();
+        let cards = document.getElementsByClassName('card');
+        let titles = document.getElementsByClassName('section-title');
+
+        for (let i = 0; i < cards.length; i++) {
+            let content = cards[i].innerText.toLowerCase();
+            if (content.includes(input)) {
+                cards[i].style.display = "";
+            } else {
+                cards[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

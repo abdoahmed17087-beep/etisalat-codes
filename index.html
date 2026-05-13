@@ -109,18 +109,20 @@
             border: 1px solid #222;
         }
 
-        .search-bar {
-            width: 100%;
-            padding: 18px;
-            border-radius: 15px;
-            border: 1px solid #333;
-            background: #0a0a0a;
-            color: #fff;
-            margin-bottom: 30px;
-            text-align: center;
-            font-size: 1.1rem;
-            outline: none;
-        }
+.search-bar {
+    width: 100%;
+    box-sizing: border-box; /* هذا السطر هو الحل السحري */
+    padding: 18px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    background: #0a0a0a;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    outline: none;
+    display: block; /* لضمان أنه يأخذ سطراً مستقلاً */
+}
 
         footer { text-align: center; margin-top: 60px; padding: 30px; color: #666; border-top: 1px solid #1a1a1a; }
     </style>

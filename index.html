@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دليل أكواد اتصالات مصر الشامل 2026</title>
+    <title>دليل أكواد اتصالات Etisalat الشامل 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --eti-green: #719917; 
-            --eti-dark: #0a0c02;
+            --etisalat-green: #719917;
+            --etisalat-dark: #000000;
+            --etisalat-accent: #c4d600;
             --card-bg: rgba(255, 255, 255, 0.05);
         }
 
         body {
-            background-color: var(--eti-dark);
-            background-image: radial-gradient(circle at top right, #1a2305, transparent), radial-gradient(circle at bottom left, #050701, transparent);
+            background-color: var(--etisalat-dark);
+            background-image: radial-gradient(circle at top right, #1d2b05, transparent), radial-gradient(circle at bottom left, #050505, transparent);
             color: #fff;
             font-family: 'Cairo', sans-serif;
             margin: 0;
@@ -25,55 +26,82 @@
 
         header {
             text-align: center;
-            padding: 40px;
-            border-bottom: 2px solid var(--eti-green);
+            padding: 30px 10px;
+            border-bottom: 2px solid var(--etisalat-green);
             margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
-        header h1 { font-size: 2.2rem; color: var(--eti-green); text-shadow: 0 0 10px rgba(113, 153, 23, 0.3); }
+        .brand-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+
+        .etisalat-logo {
+            width: 80px;
+            height: auto;
+            filter: drop-shadow(0 0 10px rgba(113, 153, 23, 0.4));
+        }
+
+        header h1 { 
+            font-size: 2.2rem; 
+            color: #fff; 
+            margin: 0;
+            text-shadow: 0 0 15px rgba(113, 153, 23, 0.3); 
+        }
+
+        header span { color: var(--etisalat-green); }
 
         .section-title {
             color: #fff;
-            background: var(--eti-green);
-            padding: 10px 20px;
-            border-radius: 5px;
+            background: linear-gradient(135deg, var(--etisalat-green), #4a660e);
+            padding: 10px 25px;
+            border-radius: 50px;
             margin: 40px 0 20px;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             display: inline-block;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
             gap: 15px;
         }
 
         .card {
             background: var(--card-bg);
-            border: 1px solid rgba(113, 153, 23, 0.2);
-            border-radius: 12px;
-            padding: 15px;
+            border: 1px solid rgba(113, 153, 23, 0.15);
+            border-radius: 15px;
+            padding: 20px;
             text-align: center;
             transition: 0.3s;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            backdrop-filter: blur(5px);
         }
 
         .card:hover {
-            border-color: var(--eti-green);
-            transform: translateY(-3px);
+            border-color: var(--etisalat-green);
+            transform: translateY(-5px);
             background: rgba(113, 153, 23, 0.05);
         }
 
-        .card-title { font-weight: bold; margin-bottom: 12px; color: #ddd; min-height: 40px; }
+        .card-title { font-weight: bold; margin-bottom: 10px; color: #eee; min-height: 45px; font-size: 1.05rem; }
 
         .code-box {
             background: #000;
-            color: var(--eti-green);
-            padding: 10px;
-            border-radius: 6px;
-            font-size: 1.3rem;
+            color: var(--etisalat-accent);
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 1.4rem;
             font-weight: bold;
             direction: ltr !important;
             unicode-bidi: bidi-override;
@@ -83,28 +111,32 @@
 
         .search-bar {
             width: 100%;
-            padding: 15px;
-            border-radius: 10px;
-            border: 1px solid var(--eti-green);
-            background: #111;
+            padding: 18px;
+            border-radius: 15px;
+            border: 1px solid #333;
+            background: #0a0a0a;
             color: #fff;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             text-align: center;
-            font-size: 1rem;
+            font-size: 1.1rem;
+            outline: none;
         }
 
-        footer { text-align: center; margin-top: 50px; padding: 20px; color: #666; border-top: 1px solid #1a1a1a; }
+        footer { text-align: center; margin-top: 60px; padding: 30px; color: #666; border-top: 1px solid #1a1a1a; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <header>
-        <h1>دليل أكواد اتصالات مصر 2026</h1>
-        <p>القائمة الكاملة والمحدثة لجميع الخدمات والأكواد المختصرة</p>
+        <div class="brand-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Etisalat_Logo.svg/1200px-Etisalat_Logo.svg.png" alt="Etisalat Logo" class="etisalat-logo">
+            <h1>دليل أكواد <span>Etisalat</span> 2026</h1>
+        </div>
+        <p>جميع أكواد خدمات اتصالات مصر المحدثة</p>
     </header>
 
-    <input type="text" id="search" class="search-bar" placeholder="ابحث عن الخدمة (مثلاً: رصيد، فلكس، إنترنت، كاش)..." onkeyup="searchCodes()">
+    <input type="text" id="search" class="search-bar" placeholder="ابحث عن الخدمة..." onkeyup="searchCodes()">
 
     <!-- الخدمات الأساسية -->
     <h2 class="section-title">⚙️ الخدمات الأساسية</h2>
@@ -238,34 +270,27 @@
             <div class="code-box" onclick="copyCode('*67*الرقم#')">*67*الرقم#</div>
         </div>
     </div>
-
+    
     <footer>
-        <p>جميع حقوق الأكواد محفوظة لشركة اتصالات مصر &copy; 2026</p>
-        <p>تم التصميم بواسطة عبدالله السواح</p>
+        <p>جميع حقوق الأكواد محفوظة لشركة اتصالات مصر (e&) &copy; 2026</p>
+        <p>تصميم عبدالله السواح</p>
     </footer>
 </div>
 
 <script>
     function copyCode(text) {
-        // تنظيف النص من الكلمات التوضيحية عند النسخ
-        let cleanText = text.replace('الرقم', '').replace('المبلغ', '');
+        let cleanText = text.replace('الرقم', '').replace('الكود', '');
         navigator.clipboard.writeText(cleanText).then(() => {
-            alert("تم نسخ الكود: " + cleanText + "\nقم بلصقه في لوحة الاتصال.");
+            alert("تم نسخ الكود: " + cleanText);
         });
     }
 
     function searchCodes() {
         let input = document.getElementById('search').value.toLowerCase();
         let cards = document.getElementsByClassName('card');
-        let titles = document.getElementsByClassName('section-title');
-
         for (let i = 0; i < cards.length; i++) {
-            let content = cards[i].innerText.toLowerCase();
-            if (content.includes(input)) {
-                cards[i].style.display = "";
-            } else {
-                cards[i].style.display = "none";
-            }
+            let title = cards[i].innerText.toLowerCase();
+            cards[i].style.display = title.includes(input) ? "" : "none";
         }
     }
 </script>
